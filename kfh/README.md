@@ -40,5 +40,6 @@ docker run --rm k0st/kfh 16f769bc1d37cc14e3093b9881cf1691 eeb024f2c81f0d55936fb8
 
 #### Notice
 Inspired by:
+
 - https://github.com/blacktop/nsrl
 - https://github.com/bigsnarfdude/Malware-Probabilistic-Data-Structres
