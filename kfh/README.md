@@ -34,9 +34,21 @@ You can also check for multiple MD5s on command line:
 docker run --rm k0st/kfh 16f769bc1d37cc14e3093b9881cf1691 eeb024f2c81f0d55936fb825d21a91d6 62b84d99295346af5a3b1a9c3bde04ab
 ```
 
+You can start checking interactively (each pattern on each line):
+```
+docker run --rm k0st/kfh -f -
+```
+
+You can check from file (each patern on each line):
+```
+docker run --rm -v /path/to/host/dir/with/search.hashes/file:/work:rw k0st/kfh -f search.hashes
+```
+
+
 ### Todo
 - [x] Merge m-whitelist
-- [ ] add interactive option (take input from stdin)
+- [x] add interactive option (take input from stdin)
+- [x] add example for taking input from file
 
 #### Notice
 Inspired by:
