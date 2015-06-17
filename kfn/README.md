@@ -33,6 +33,16 @@ You can also check for multiple MD5s on command line:
 docker run --rm k0st/kfn notepad.exe calc.exe bloomutil.exe
 ```
 
+You can start checking interactively (each pattern on each line):
+```
+docker run --rm k0st/kfn -f -
+```
+
+You can check from file (each patern on each line):
+```
+docker run --rm -v /path/to/host/dir/with/search.names/file:/work:rw k0st/kfn -f search.names 
+```
+
 #### Notice
 Inspired by:
 

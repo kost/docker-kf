@@ -2,7 +2,7 @@
 
 # set -x  # uncomment for DEBUG purposes
 
-WORKDIR=/work
+WORKDIR=/bloom
 BLOOMFN=filenames.bloom
 BLOOMUTILCMD=/usr/local/bin/bloomutil
 
