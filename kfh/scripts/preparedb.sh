@@ -2,7 +2,7 @@
 
 # set -x  # uncomment for DEBUG purposes
 
-WORKDIR=/work
+WORKDIR=/bloom
 BLOOMUTILCMD=/usr/local/bin/bloomutil
 
 cd $WORKDIR
