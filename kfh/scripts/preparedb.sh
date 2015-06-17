@@ -22,7 +22,7 @@ unzip $NSRL_ZIP $NSRL_FILE -d $WORKDIR
 echo "[i] Deleting $NSRL_ZIP ..."
 rm -f $NSRL_ZIP
 echo "[i] Extracting MD5..."
-cut -d, -f2 $NSRL_FILE | cut -d\" -f2 > $NSRL_MD5FILE
+cut -d, -f2 $NSRL_FILE | cut -d\" -f2 | sed 1d > $NSRL_MD5FILE
 
 echo "[i] Downloading Mandiant work set..."
 MWHITELISTURL=https://github.com/kost/m-whitelist/raw/master/m-whitelist-1.0.zip
@@ -39,7 +39,7 @@ echo "bloomfile=$WORKDIR/work.bloom" > $BLOOMUTILCFG
 echo "unhex=1" >> $BLOOMUTILCFG
 
 echo "[i] Build bloomfilter databases ..."
-cd $WORKDIR && $BLOOMUTILCMD -v -i $NSRL_MD5FILE $MWLFILE 
+cd $WORKDIR && $BLOOMUTILCMD -v -c $NSRL_MD5FILE $MWLFILE 
 echo "[i] Listing created files ..."
 ls -l $WORKDIR
 

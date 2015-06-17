@@ -15,4 +15,4 @@ WORKDIR /work
 
 ENTRYPOINT ["bloomutil"]
 
-CMD ["C0FFEE"]
+CMD ["-h"]
