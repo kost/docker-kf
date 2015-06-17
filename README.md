@@ -4,4 +4,5 @@ Docker containter for handling known files (goodware, badware) - usually by use 
 Current docker images:
 
 - k0st/kfh - Database Hash Search: NSLR, Mandiant m-whitelist, ...
+- k0st/kfn - Database Filename Search: NSLR
 - k0st/nsrl - NSRL Database Hash Search - alpine based 
