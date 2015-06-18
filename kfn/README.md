@@ -27,7 +27,7 @@ Check filename of notepad.exe
 docker run --rm k0st/kfn notepad.exe
 ```
 
-You can also check for multiple MD5s on command line:
+You can also check for multiple filenames on command line:
 
 ```
 docker run --rm k0st/kfn notepad.exe calc.exe bloomutil.exe
